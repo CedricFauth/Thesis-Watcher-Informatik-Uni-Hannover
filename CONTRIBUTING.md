@@ -34,10 +34,10 @@ These are the basic steps:
 3. Introduce your module to ```config.py```
 4. Create a pull request
 
-### 1. Fork and clone this repo
+### 1. 
 First of all the repo needs to be forked in order to add new files. If you don't know how this works you may google it.
 
-### 2. Create a new web_[YOUR_SITE].py file inside sites/
+### 2. 
 This is the most important step. The file should consist of one or multiple functions and is responsible for parsing the content of your specified website.
 
 The following example should demonstrate how such a file could look like.
@@ -99,8 +99,7 @@ def website_[...]() -> SiteEntries:
   return entries
 ```
 
-### 3. Introduce your module to config.py
-
+### 3. 
 Nearly done! The last step is to introduce your ```web_[...].py``` file to the rest of the program. In order to do that you need to edit the ```config.py```
 file in ```sites/```.
 It looks like this:
@@ -116,5 +115,5 @@ sites = {
 ```
 Import your module using ```from sites.web_[...] import *``` and in the dict add a new line: ```"name of site" : your_main_function```. You need to refer to your 'main' function inside your ```web_[...].py``` file. Don't use `()` here because that would run the function.
 
-### 4. Create a pull request
+### 4. 
 At the end a pull request is necessary to add the files to the original repo. If you don't know how this works you may google it.
