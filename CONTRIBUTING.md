@@ -18,6 +18,12 @@ The following chapters describe how to add new sites.
    |- ...
 ```
 
+## Fixing Bugs
+Feel free to create pull requests for fixed bugs.
+
+## Improving code other than adding a new site
+Feel free to create pull requests!
+
 ## Adding a new site
 
 What you need to know in advance: BeautifulSoup4, basic knowledge of python modules
@@ -54,7 +60,7 @@ You need to create an object of type SiteEntries. This will be used soon to stor
   soup = HTMLParser.getSoup("https://www.pi.uni-hannover.de/de/se/studentische-arbeiten/angebote/")
 ```
 
-After that you can use methods of bs4 to parse the Data. There are multiple ways and every website is different, so that's the challenging part. In the end you should have a string containing the title of the thesis and another one containing the degree of the thesis (Bachelor/Master).
+After that you can use methods of bs4 to parse the Data. There are multiple ways and every website is different, so that's the challenging part. In the end you should have a string containing the title of the thesis and another one containing the degree of the thesis (Bachelor/Master or any other degree).
 ```python
   table_body = tables.find('tbody')
   rows = table_body.find_all('tr')
