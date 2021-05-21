@@ -95,6 +95,20 @@ def website_[...]() -> SiteEntries:
 
 ### 3. Introduce your module to config.py
 
+Nearly done! The last step is to introduce your ```web_[...].py``` file to the rest of the program. In order to do that you need to edit the ```config.py```
+file in ```sites/```.
+It looks like this:
+```python
+from sites.web_se import *
+from sites.web_dbs import *
+
+sites = {
+	# "Name des Instituts" : Funktionsname,  [OHNE '()']
+	"Software Engineering" : website_se,
+	"Datenbanken und Informationssysteme" : website_dbs,
+}
+```
+Import your module using ```from sites.web_[...] import *``` and in the dict add a new line: ```"name of site" : your_main_function```. You need to refer to your 'main' function inside your ```web_[...].py``` file. Don't use `()` here because that would run the function.
 
 ### 4. Create a pull request
 At the end a pull request is necessary to add the files to the original repo. If you don't know how this works you may google it.
