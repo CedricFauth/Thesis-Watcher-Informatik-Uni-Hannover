@@ -1,7 +1,6 @@
-from sites.sites import sites
+from sites.config import sites
 from colorama import Fore, Back, Style
 import requests
-
 
 def main():
 	for name, fun in sites.items():

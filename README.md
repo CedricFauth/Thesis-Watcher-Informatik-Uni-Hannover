@@ -1,1 +1,2 @@
-# Thesis-Watcher-Informatik-Uni-Hannover
+# Thesis Watcher: Informatik Uni Hannover
+

@@ -1,4 +1,5 @@
-from model import HTMLParser, SiteEntries
+from entries import SiteEntries
+from web import HTMLParser
 
 def website_dbs() -> SiteEntries:
 	soup = HTMLParser.getSoup("https://www.pi.uni-hannover.de/de/dbs/abschlussarbeiten/")
