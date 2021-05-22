@@ -26,16 +26,15 @@ class SiteEntries:
 		i = 0
 		for e in self.entries:
 			second = None
-			l = 80 - len(e.thtype) - 9
+			l = 80 - len(e.thtype) - 8
 			if len(e.title) > l:
-				out += '{:>2}. {} [{}]'.format(i, e.title[:l+1], e.thtype)
-				out += '\n    {}'.format(e.title[l+1:])
+				out += '{:>2}. {} [{}]'.format(i, e.title[:l], e.thtype)
+				out += '\n    {}'.format(e.title[l:])
 			else:
-				out += '{:>2}. {:<{len}} [{}]'.format(i, e.title, e.thtype, len=l+1)
+				out += '{:>2}. {:<{len}} [{}]'.format(i, e.title, e.thtype, len=l)
 
 			#if (len(e.others)):
 			#	out += "\tmore: " + str(e.others)
 			i += 1
 			out += '\n'
 		return out
-	

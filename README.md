@@ -12,6 +12,7 @@ Currently supported institutes:
   - DBS
   - SE
   - SRA 
+  - THI
 
 ## Installation
 Requirements: Python3 and pip3
