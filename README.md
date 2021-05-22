@@ -7,6 +7,12 @@ Use this tool to get an overview of available thesis topics issued for Computer 
 ## Important
 **This collection is not complete. You may write additional modules and contribute them. It's simple, just [go to CONTRIBUTING.md](/CONTRIBUTING.md) for more information.**
 
+Currently supported institutes:
+- LUH
+  - DBS
+  - SE
+  - SRA 
+
 ## Installation
 Requirements: Python3 and pip3
 

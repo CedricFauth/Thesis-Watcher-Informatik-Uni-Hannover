@@ -1,9 +1,5 @@
 # CONTRIBUTING
 
-Currently we support the following sites:
-- [SE Uni Hannover](https://www.pi.uni-hannover.de/de/se/studentische-arbeiten/angebote/)
-- [DBS Uni Hannover](https://www.pi.uni-hannover.de/de/dbs/abschlussarbeiten/)
-
 Contributors can add new sites quite simple. The program was designed with modularity in mind.
 The following chapters describe how to add new sites.
 
